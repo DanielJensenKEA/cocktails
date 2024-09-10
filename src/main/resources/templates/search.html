@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Search People</title>
+</head>
+<body>
+
+<h2>Search for an ingredient</h2>
+<!--Denne kalder GetMapping /search metoden i controlleren. -->
+<form th:action="@{/cocktails/search}" method="get">
+    <label for="ingredient">Enter ingredient:</label>
+    <input type="text" id="ingredient" name="ingredient" placeholder="Enter ingredient" />
+    <button type="submit">Search</button>
+</form>
+
+</body>
+</html>
